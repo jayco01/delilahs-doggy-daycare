@@ -1,4 +1,4 @@
-/************* your name: 
+/************* your name: Jay Vincent Layco
 
 INSTRUCTIONS:
 Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
@@ -22,9 +22,16 @@ body {
     line-height: 1.5;
 }
 
+:root {
+    --clr-mustard-yellow: #E5AF42;
+    --clr-cornflower-blue: #4278e5;
+}
+
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 
-
+.flex {
+    display: flex;
+}
  
 
 /************* site-wide text styling *************/
@@ -42,10 +49,44 @@ body {
         - change the cursor to pointer.
 */
 
+h1 {
+    font-size: 48px;
+    display: grid;
+    place-items: center;
+}
 
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px; 
+}
 
+.large-text {
+    font-size: 24px;
+}
 
+.fake-button {
+    background-color: var(--clr-mustard-yellow);
+    display: grid;
+    place-items: center;
+    line-height: 3;
+    border: 1px solid black;
+}
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+.fake-button:hover, .blue-hover:hover {
+    text-decoration: underline;
+    background-color: var(--clr-cornflower-blue);
+    color: white;
+    cursor: pointer;  
+}
 
 
 
