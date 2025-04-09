@@ -100,9 +100,29 @@ main a:hover, footer a:hover {
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
+header{
+    background-color: var(--clr-mustard-yellow);
+    height: 150px;
+    margin-bottom: 25px;
+}
 
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 25px 0 25px 25px;
+}
 
+header h1{
+    width: 100%;
+}
 
+footer {
+    background-color: var(--clr-mustard-yellow);
+    margin-top: 50px;
+    height: 60px;
+    font-weight: 200px;
+    text-align: center;
+}
 
 
 /************* index page *************/
