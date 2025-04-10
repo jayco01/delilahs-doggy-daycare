@@ -226,11 +226,6 @@ footer {
 }
 
 
-
-
-
-
-
 /************* contact page *************/
 /* TO DO:
     - the main section of the .contact page will be 420px tall, and centered.
@@ -240,6 +235,50 @@ footer {
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+.contact {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.contact form label{
+    width: 150px;
+    text-align: right;
+    font-family: inherit;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.contact form input {
+    width: 300px;
+    font-family: inherit;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.contact form textarea {
+    height: 150px;
+    margin-bottom: 24px;
+    width: 308px;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+.contact form button {
+    border: 1px solid black;
+    font-family: inherit;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    width: 308px;
+    place-self: end;    
+}
+
+.contact form .flex {
+    gap: 24px;
+}
 
 
