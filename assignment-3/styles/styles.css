@@ -137,15 +137,30 @@ footer {
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
 
-.flex img {
+.index .flex img {
     width: 300px;
     margin-left: 25px;
     margin-bottom: 50px;
 }
 
+.about-us h2 {
+    line-height: 36px;
+}
 
+.index p {
+    margin-bottom: 12px;
+}
+ 
+.index .flex{
+    gap: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
 
-
+.index .flex .fake-button {
+    width: 250px;
+}
 
 
 /************* bookings page *************/
