@@ -104,6 +104,8 @@ header{
     background-color: var(--clr-mustard-yellow);
     height: 150px;
     margin-bottom: 25px;
+    display: flex;
+    align-items: center;
 }
 
 header img {
@@ -134,6 +136,12 @@ footer {
     - each fake-button on this page will be 250px wide with 150px of space between them.
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
+
+.flex img {
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
 
 
 
