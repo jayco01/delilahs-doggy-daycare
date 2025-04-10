@@ -177,11 +177,53 @@ footer {
 
 */
 
+.booking-page {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 
+.booking-page p, .booking-page ul li {
+    font-size: 18px;
+}
 
+.day-selector {
+    margin-bottom: 12px;
+    gap: 20px;
+}
 
+.booking-page ul li {
+    width: 60px;
+    border: 1px solid black;
+}
 
+.small-button {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0 5px;
+}
 
+.top-margin {
+    margin: 24px 0 12px;
+}
+
+#clear-button {
+    width: 200px;
+}
+
+.clicked {
+    background-color: var(--clr-mustard-yellow);
+}
+
+.booking-page * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 
 
