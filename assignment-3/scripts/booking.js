@@ -2,7 +2,16 @@
 // useful variables might be: the cost per day, the number of days selected, and elements on the screen that will be clicked or will need to be modified. 
 // Do any of these variables need to be initialized when the page is loaded? 
 // When do they need to be reset or updated?
+const monday = document.getElementById("monday");
+const teusday = document.getElementById("tuesday");
+const wednesday = document.getElementById("wednesday");
+const thursday = document.getElementById("thursday");
+const friday = document.getElementById("friday");
 
+const full = document.getElementById("full");
+const half = document.getElementById("half");
+
+const calculatedCost = document.getElementById("calculated-cost");
 
 
 

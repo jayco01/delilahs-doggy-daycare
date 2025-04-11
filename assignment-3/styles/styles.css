@@ -106,6 +106,7 @@ header{
     margin-bottom: 25px;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 
 header img {
@@ -123,7 +124,10 @@ footer {
     margin-top: 50px;
     height: 60px;
     font-weight: 200px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
