@@ -12,7 +12,8 @@ const full = document.getElementById("full");
 const half = document.getElementById("half");
 
 const calculatedCost = document.getElementById("calculated-cost");
-
+let costSum = parseInt(calculatedCost.innerHTML);
+let costPerDay = 20;
 
 
 /********* colour change days of week *********/
@@ -20,8 +21,70 @@ const calculatedCost = document.getElementById("calculated-cost");
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
 
+function addMonday() {
+    if (monday.classList.contains("clicked")) {
+        monday.classList.remove("clicked");
+        costSum -= costPerDay;
+        calculatedCost.innerHTML = costSum;
+    } else {
+        monday.classList.add("clicked");
+        costSum += costPerDay;
+        calculatedCost.innerHTML = costSum;
+    }
+}
+monday.addEventListener("click",addMonday)
 
+function addTeusday() {
+    if (teusday.classList.contains("clicked")) {
+        teusday.classList.remove("clicked");
+        costSum -= costPerDay;
+        calculatedCost.innerHTML = costSum;
+    } else {
+        teusday.classList.add("clicked");
+        costSum += costPerDay;
+        calculatedCost.innerHTML = costSum;
+    }
+}
+teusday.addEventListener("click",addTeusday)
 
+function addWednesday() {
+    if (wednesday.classList.contains("clicked")) {
+        wednesday.classList.remove("clicked");
+        costSum -= costPerDay;
+        calculatedCost.innerHTML = costSum;
+    } else {
+        wednesday.classList.add("clicked");
+        costSum += costPerDay;
+        calculatedCost.innerHTML = costSum;
+    }
+}
+wednesday.addEventListener("click",addWednesday)
+
+function addThursday() {
+    if (thursday.classList.contains("clicked")) {
+        thursday.classList.remove("clicked");
+        costSum -= costPerDay;
+        calculatedCost.innerHTML = costSum;
+    } else {
+        thursday.classList.add("clicked");
+        costSum += costPerDay;
+        calculatedCost.innerHTML = costSum;
+    }
+}
+thursday.addEventListener("click",addThursday)
+
+function addFriday() {
+    if (friday.classList.contains("clicked")) {
+        friday.classList.remove("clicked");
+        costSum -= costPerDay;
+        calculatedCost.innerHTML = costSum;
+    } else {
+        friday.classList.add("clicked");
+        costSum += costPerDay;
+        calculatedCost.innerHTML = costSum;
+    }
+}
+friday.addEventListener("click",addFriday)
 
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
