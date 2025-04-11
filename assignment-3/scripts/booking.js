@@ -111,7 +111,7 @@ function calculateHalfDay() {
         half.classList.add("clicked");
         full.classList.remove("clicked");
         costPerDay = 20;
-        costSum  = (costSum/35)*20;
+        costSum  = (costSum/35)*costPerDay;
         calculatedCost.innerHTML = costSum;
     }
 }
@@ -121,7 +121,17 @@ half.addEventListener("click",calculateHalfDay)
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
 
+function calculateFullDay() {
+    if (!full.classList.contains("clicked")) {
+        full.classList.add("clicked");
+        half.classList.remove("clicked");
+        costPerDay = 35;
+        costSum  = (costSum/20)*costPerDay;
+        calculatedCost.innerHTML = costSum;
+    }
+}
 
+full.addEventListener("click",calculateFullDay)
 
 
 
