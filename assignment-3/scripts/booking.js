@@ -13,7 +13,7 @@ const half = document.getElementById("half");
 
 const calculatedCost = document.getElementById("calculated-cost");
 let costSum = parseInt(calculatedCost.innerHTML);
-let costPerDay = 20;
+let costPerDay = 35;
 
 const clearButton = document.getElementById("clear-button");
 
@@ -103,12 +103,20 @@ function resetTotal() {
 clearButton.addEventListener("click",resetTotal)
 
 
-
-
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
 
+function calculateHalfDay() {
+    if (!half.classList.contains("clicked")) {
+        half.classList.add("clicked");
+        full.classList.remove("clicked");
+        costPerDay = 20;
+        costSum  = (costSum/35)*20;
+        calculatedCost.innerHTML = costSum;
+    }
+}
 
+half.addEventListener("click",calculateHalfDay)
 
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
