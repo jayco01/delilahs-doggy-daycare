@@ -15,6 +15,9 @@ const calculatedCost = document.getElementById("calculated-cost");
 let costSum = parseInt(calculatedCost.innerHTML);
 let costPerDay = 20;
 
+const clearButton = document.getElementById("clear-button");
+
+
 
 /********* colour change days of week *********/
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
@@ -89,7 +92,15 @@ friday.addEventListener("click",addFriday)
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
+function resetTotal() {
+    monday.classList.remove("clicked");
+    teusday.classList.remove("clicked");
+    wednesday.classList.remove("clicked");
+    thursday.classList.remove("clicked");
+    friday.classList.remove("clicked");
+}
 
+clearButton.addEventListener("click",resetTotal)
 
 
 
