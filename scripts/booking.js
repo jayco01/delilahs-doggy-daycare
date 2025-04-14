@@ -98,6 +98,7 @@ function resetTotal() {
     wednesday.classList.remove("clicked");
     thursday.classList.remove("clicked");
     friday.classList.remove("clicked");
+    calculatedCost.innerHTML = 0;
 }
 
 clearButton.addEventListener("click",resetTotal)
