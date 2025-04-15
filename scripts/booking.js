@@ -112,8 +112,10 @@ function calculateHalfDay() {
         half.classList.add("clicked");
         full.classList.remove("clicked");
         costPerDay = 20;
+        if (calculatedCost != ""){
         costSum  = (costSum/35)*costPerDay;
         calculatedCost.innerHTML = costSum;
+        }
     }
 }
 
