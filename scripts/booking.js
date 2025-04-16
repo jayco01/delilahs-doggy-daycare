@@ -3,7 +3,7 @@
 // Do any of these variables need to be initialized when the page is loaded? 
 // When do they need to be reset or updated?
 const monday = document.getElementById("monday");
-const teusday = document.getElementById("tuesday");
+const tuesday = document.getElementById("tuesday");
 const wednesday = document.getElementById("wednesday");
 const thursday = document.getElementById("thursday");
 const friday = document.getElementById("friday");
@@ -88,7 +88,7 @@ function toggleMonday() {
 
 function resetTotal() {
     monday.classList.remove("clicked");
-    teusday.classList.remove("clicked");
+    tuesday.classList.remove("clicked");
     wednesday.classList.remove("clicked");
     thursday.classList.remove("clicked");
     friday.classList.remove("clicked");
